@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-        In Progress
+        In Progress....
     </>
   );
 }
