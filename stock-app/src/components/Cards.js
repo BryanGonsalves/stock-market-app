@@ -12,7 +12,7 @@ const Cards = ({ searchString }) => {
           try {
             const options = {
                 method: 'GET',
-                url: 'https://yfapi.net/v1/finance/trending/IN',
+                url: 'https://yfapi.net/v1/finance/trending/US',
                 headers: {
                     'x-api-key': apiKey
                 }
