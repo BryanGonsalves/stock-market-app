@@ -5,6 +5,7 @@
   }
   body {
     font-family: Oxygen, sans-serif;
+    background: whitesmoke
   }
   .slider {
     line-height: 50px;
@@ -35,7 +36,7 @@
     100% { transform: translate(-100%, 0); }
   }
   .header {
-    background-color:#191970;
+    background-color:maroon;
     height: 4.2rem;
   }
   .header-title {
