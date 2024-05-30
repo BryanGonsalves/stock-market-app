@@ -37,7 +37,7 @@ const Cards = ({ searchString }) => {
                         <div className="container-fluid">
                             <div className="row text-center wrapper">
                                 {
-                                    trend.quotes.slice(0, 100).map((stocks) => {
+                                    trend.quotes.slice(0, 15).map((stocks) => {
                                         if (findValue(stocks.symbol)) {
                                             return (
                                                 <Card
