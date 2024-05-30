@@ -97,31 +97,31 @@
     color: white;
   }
   hr {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 140%;                
-    background-color: black;
-    height: 1px;
-  }
-  .stock-row {
-    text-align: center;
-  }
-  .stock-column-data {
-    margin-top: 6rem;
-  }
-  .summary-span {
-    color: #191970; 
-    font-weight: bold;
-  }
-  .stock-headings {
-    margin-top: 2.7rem;
-  }
-  .stock-column-chart {
-    padding: 10px;
-    text-align: center;
-  }
-  .chart-true {
-    background-color: #FFCCCC; 
-    border: 1px solid red;
-  }
+  border: 0;
+  clear: both;
+  display: block;
+  width: 140%;                
+  background-color: black;
+  height: 1px;
+}
+.stock-row {
+  text-align: center;
+}
+.stock-column-data {
+  margin-top: 6rem;
+}
+.summary-span {
+  color: #191970; 
+  font-weight: bold;
+}
+.stock-headings {
+  margin-top: 2.7rem;
+}
+.stock-column-chart {
+  padding: 10px;
+  text-align: center;
+}
+.chart-true {
+  background-color: #FFCCCC; 
+  border: 1px solid red;
+}
