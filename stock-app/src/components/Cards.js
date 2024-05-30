@@ -28,16 +28,25 @@ const Cards = ({ searchString }) => {
         fetchTrend();
       }, [apiKey]);
 
+    // Function to shuffle an array
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+
     return (
         <>
-            <div className="cards_title"><h2>Trending Indexes</h2></div>
+            <div className="cards_title"><h2>Trending Equites & Indexes</h2></div>
             {
                 trend ? (
                     <div className="container-fluid">
                         <div className="container-fluid">
                             <div className="row text-center wrapper">
                                 {
-                                    trend.quotes.slice(0, 15).map((stocks) => {
+                                    shuffleArray(trend.quotes).slice(0, 150).map((stocks) => {
                                         if (findValue(stocks.symbol)) {
                                             return (
                                                 <Card
@@ -45,9 +54,8 @@ const Cards = ({ searchString }) => {
                                                     symbol={stocks.symbol}
                                                 />
                                             )
-                                        }
-                                        else {
-                                            return null
+                                        } else {
+                                            return null;
                                         }
                                     })
                                 }
@@ -59,7 +67,7 @@ const Cards = ({ searchString }) => {
                 )
             }            
         </>
-    )
+    );
 }
 
 export default Cards;
