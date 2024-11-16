@@ -125,3 +125,144 @@
   background-color: #FFCCCC; 
   border: 1px solid red;
 }
+
+/* Center container styling for full-page centering */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to move the login form up */
+  height: 100vh;
+  padding-top: 5rem; /* Add some padding from the top */
+  background-color: white; /* Dark background for the page */
+}
+
+/* Form styling */
+.login-form {
+  background-color: maroon; /* Red background for the form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  color: #000; /* Black text color for better contrast */
+}
+
+/* Heading styling */
+.login-heading {
+  margin-bottom: 20px;
+  color: white; /* Black color for the heading */
+}
+
+/* Input styling */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #000; /* Black border for input fields */
+  background-color: #fff; /* White background for input fields */
+  color: #000; /* Black text for input fields */
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000; /* Black background for button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Error message styling */
+.login-error {
+  color: #330000; /* Dark red for error messages */
+  font-size: 0.9em;
+}
+
+/* Signup link styling */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.signup-link {
+  color: darkblue; /* Black color for signup link */
+  text-decoration: none;
+}
+
+/* Center container styling for full-page centering */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to move the login form up */
+  height: 100vh;
+  padding-top: 5rem; /* Add some padding from the top */
+  background-color: white;
+}
+
+/* Form styling */
+.signup-form {
+  background-color: maroon;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  color: #000;
+}
+
+/* Heading styling */
+.signup-heading {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Input styling */
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Button styling */
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Error and Success message styling */
+.signup-error {
+  color: #330000;
+  font-size: 0.9em;
+}
+
+.signup-success {
+  color: #008000;
+  font-size: 0.9em;
+}
+
+/* Signup link styling */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.signup-link {
+  color: darkblue;
+  text-decoration: none;
+}
