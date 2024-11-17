@@ -24,7 +24,7 @@ const Signup = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5001/signup', {
+            const response = await fetch('https://stock-market-backend-hd5f.onrender.com/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, email, password }),
