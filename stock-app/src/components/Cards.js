@@ -46,7 +46,7 @@ const Cards = ({ searchString }) => {
                         <div className="container-fluid">
                             <div className="row text-center wrapper">
                                 {
-                                    shuffleArray(trend.quotes).slice(0, 10).map((stocks) => {
+                                    shuffleArray(trend.quotes).slice(0, 50).map((stocks) => {
                                         if (findValue(stocks.symbol)) {
                                             return (
                                                 <Card
