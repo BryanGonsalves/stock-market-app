@@ -31,14 +31,19 @@ const SECRET_KEY = process.env.SECRET_KEY || 'your_secret_key'; // Store in .env
 
 // Signup route
 app.post('/signup', (req, res) => {
-  const { username, password } = req.body;
+  const { username, email, password } = req.body;
+
+  // Check if email, username, and password are provided
+  if (!email || !username || !password) {
+    return res.status(400).json({ error: 'Please fill in all fields' });
+  }
 
   // Hash the password before storing
   bcrypt.hash(password, 10, (err, hashedPassword) => {
     if (err) return res.status(500).json({ error: 'Password encryption failed' });
 
-    const query = 'INSERT INTO users (username, password) VALUES (?, ?)';
-    db.query(query, [username, hashedPassword], (err, results) => {
+    const query = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
+    db.query(query, [username, email, hashedPassword], (err, results) => {
       if (err) {
         console.error('Error during signup:', err.message);  // Debugging
         return res.status(500).json({ error: 'Database error during signup' });
